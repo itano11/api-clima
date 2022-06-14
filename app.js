@@ -20,14 +20,14 @@ window.addEventListener('load', ()=>{
               lon = posicion.coords.longitude
 
               //Ubicación actual
-              const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&lang=es&units=metric&appid=dbb7c7c3621c886a78cf0263d156f9c5`
+              const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&lang=es&units=metric&appid=API-KEY`
 
               //Ubicación por ciudad y país
-              //const url = `https://api.openweathermap.org/data/2.5/weather?q={city name},{country code}&appid=dbb7c7c3621c886a78cf0263d156f9c5`
+              //const url = `https://api.openweathermap.org/data/2.5/weather?q={city name},{country code}&appid=API-KEY`
 
 
               //Ubicación por nombre de ciudad, incorporando lenguaje español y sistema métrico
-              //const url = `https://api.openweathermap.org/data/2.5/weather?q=santiago&lang=es&units=metric&appid=dbb7c7c3621c886a78cf0263d156f9c5`
+              //const url = `https://api.openweathermap.org/data/2.5/weather?q=santiago&lang=es&units=metric&appid=API-KEY`
 
               //Utilizando fetch para las respuestas de la API en formato JSON en este caso
               fetch(url)
